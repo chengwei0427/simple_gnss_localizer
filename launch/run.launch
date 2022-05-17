@@ -1,0 +1,27 @@
+<!-- http://a.tiles.mapbox.com/v4/mapbox.satellite/{z}/{x}/{y}.jpg?access_token=pk.eyJ1IjoidGgzY29yeWQiLCJhIjoiY2l5MjNramozMDAxYTMybnR4Y296NmZ6bCJ9.Qx4UJrlAlu5kK1GvrCvmig -->
+<launch>
+
+  <arg name="save_origin" default="false"/>
+  <arg name="load_origin" default="true"/>
+  <arg name="ori_lat" default="30.20230164"/>
+  <arg name="ori_lon" default="120.26021482"/>
+  <arg name="ori_alt" default="15.14500000"/>
+
+  <node name="path_client_copy" pkg="gnss_localizer" type="path_client_copy.py" output="screen">
+  </node>
+
+  <node pkg="gnss_localizer" type="gnss_localizer" name="gnss_localizer" output="screen">
+    <param name="save_origin" value="$(arg save_origin)"/>
+    <param name="load_origin" value="$(arg load_origin)"/>
+    <param name="ori_lat" value="$(arg ori_lat)"/>
+    <param name="ori_lon" value="$(arg ori_lon)"/>
+    <param name="ori_alt" value="$(arg ori_alt)"/>
+
+    <remap from="fix" to="fix_for_carto"/>
+  </node>
+
+  <node pkg="rviz" type="rviz" name="rviz" output="screen" 
+    args="-d $(find gnss_localizer)/launch/rviz.rviz" required="true">
+  </node>
+
+</launch>
