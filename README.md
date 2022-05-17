@@ -51,3 +51,6 @@ roslaunch gnss_localizer run.launch
 ```
 rosbag play your-bag.bag --clock
 ```
+
+## Acknowledgements
+The gnss_localizer is implemented based on Autoware-AI;
