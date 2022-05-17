@@ -16,7 +16,7 @@ A simple GNSS positioning and display demo
 
 -[ROS]
 
--[rviz_satellite]:copy to the catkin_ws,and ```catkin_make -DCATKIN_WITHELIST_PACKAGES="rviz_satellite"```
+-[rviz_satellite](https://github.com/nobleo/rviz_satellite):copy to the catkin_ws,and ```catkin_make -DCATKIN_WITHELIST_PACKAGES="rviz_satellite"```
 
 ## Install
 
@@ -54,3 +54,4 @@ rosbag play your-bag.bag --clock
 
 ## Acknowledgements
 The gnss_localizer is implemented based on Autoware-AI;
+Thanks rviz_satellite and Autoware-AI;
