@@ -1,3 +1,11 @@
+<a href="#"><img src="https://img.shields.io/badge/c++-%2300599C.svg?style=flat&logo=c%2B%2B&logoColor=white"></img></a>
+  <a href="#"><img src="https://img.shields.io/github/stars/chengwei0427/simple_gnss_localizer"></img></a>
+  <a href="#"><img src="https://img.shields.io/github/forks/chengwei0427/simple_gnss_localizer"></img></a>
+  <a href="#"><img src="https://img.shields.io/github/repo-size/chengwei0427/simple_gnss_localizer"></img></a>
+  <a href="https://github.com/chengwei0427/simple_gnss_localizer/issues"><img src="https://img.shields.io/github/issues/chengwei0427/simple_gnss_localizer"></img></a>
+  <a href="https://github.com/chengwei0427/simple_gnss_localizer/graphs/contributors"><img src="https://img.shields.io/github/contributors/chengwei0427/simple_gnss_localizer?color=blue"></img></a>
+  ![Profile views](https://gpvc.arturio.dev/chengwei0427/simple_gnss_localizer)
+
 # simple_gnss_localizer
 A simple GNSS positioning and display demo
 
